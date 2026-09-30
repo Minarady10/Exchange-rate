@@ -180,14 +180,13 @@ let  countryCodes = Object.keys(COUNTRY_NAMES);
         if (textInp === "" || isNaN(indNumber)) {
             return;
         }
-
      let one = chooseOne.value;
      let two = chooseTwo.value;
 
-     let res = await fetch(`https://v6.exchangerate-api.com/v6/3977fd9a8c13c0beca91ad70/latest/USD`);
+     let res = await fetch(`https://v6.exchangerate-api.com/v6/3977fd9a8c13c0beca91ad70/latest/${one}`);
       let result = await res.json();
       console.log(result);
-        let rate = result.conversion_rates[one];
-        let finalResult = (indNumber * rate).toFixed(2);
+        let rate = result.conversion_rates[two];
+        let finalResult = (indNumber * rate).toFixed(1);
         text.innerHTML = `${indNumber} ${one} = ${finalResult} ${two}`;
 });
