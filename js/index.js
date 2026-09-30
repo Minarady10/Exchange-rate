@@ -190,3 +190,8 @@ let  countryCodes = Object.keys(COUNTRY_NAMES);
         let finalResult = (indNumber * rate).toFixed(2);
         text.innerHTML = `${indNumber} ${one} = ${finalResult} ${two}`;
 });
+$switch.addEventListener("click",()=>{
+    let change = chooseOne.value;
+    chooseOne.value = chooseTwo.value;
+    chooseTwo.value = change;
+});
