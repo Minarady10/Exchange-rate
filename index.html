@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Exchange</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <body class="bg-light">
+    <div class="d-flex align-items-center justify-content-center min-vh-100">
+      <div class="page w-100 vh-100">
+         <div class="nav d-flex justify-content-around align-items-center bg-black">
+    <img src="media/nav-banner.png">
+    <h2 class="text-warning">Currency-Converter</h2>
+    </div>
+        <div
+          class="main w-100  d-flex justify-content-center align-items-end  gap-4">
+        
+          <div
+            class="totcard d-flex flex-column align-items-center justify-content-center">
+            <div class="card p-4 shadow-lg bg-primary-subtle border-0 w-100 ">
+               <h4>Amount</h4>
+    <div class="input-group">
+        <div class="input-group mb-3">
+            <input
+            type="text"
+            class=" zero form-control  bg-primary-subtle border-black  text-black"
+            placeholder="1 By Defult"/>
+            <i class=" fa-solid fa-arrow-right-arrow-left fa-flip-vertical arrow-logo" style="color: #0466e7; cursor: pointer;"></i>
+        </div>
+        
+        </div>
+        <div class="input-group  d-flex flex-column align-items-center ">
+
+        <div class="input-group mb-3  one">
+            <select class="form-select inpOne" id="inputGroupSelect01"></select>
+            </div>
+            
+            <div class="input-group mb-3  two ">
+            <select class="form-select inpTwo" id="inputGroupSelect01"></select>
+    
+            </div>
+        </div>
+        <div class="btn"><button type="button" class="btn btn-warning ">Convert</button></div>
+    <div class="result">
+        <h1 class="text-center">1 AED = 1 AED</h1>
+    </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>

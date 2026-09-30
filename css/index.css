@@ -1,0 +1,50 @@
+.page .nav img{
+        width: 5%;
+    margin: 0.5rem;
+    border-radius: 1rem;
+}
+.page {
+.zero{
+    border-top:none ;
+    border-left:none ;
+    border-right: none;
+}
+.arrow-logo{
+    margin-bottom: 1rem;
+}
+}
+.main {
+    height: 80vh;
+.card{
+    height: 70vh;
+    .one{
+     width: 70%;
+    }
+    .two{
+     width: 70%; 
+    }
+   }
+   .totcard{
+        WIDTH: 70%;
+   }
+}
+@media (max-width: 992px){
+    .page .nav img{
+        width: 15%;
+    }
+    .main{
+        .totcard{
+                WIDTH: 91%;
+        }
+        .card{
+    
+    .one{
+     width: 100%;
+    }
+    .two{
+     width: 100%; 
+    }
+   }
+        
+    }
+}
