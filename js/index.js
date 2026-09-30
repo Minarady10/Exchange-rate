@@ -187,6 +187,6 @@ let  countryCodes = Object.keys(COUNTRY_NAMES);
       let result = await res.json();
       console.log(result);
         let rate = result.conversion_rates[two];
-        let finalResult = (indNumber * rate).toFixed(1);
+        let finalResult = (indNumber * rate).toFixed(2);
         text.innerHTML = `${indNumber} ${one} = ${finalResult} ${two}`;
 });
